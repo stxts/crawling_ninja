@@ -31,7 +31,7 @@
   .jumbotron {
       background-image: url("http://s3.amazonaws.com/stxts-profile/crawling_ninja.png");
       background-repeat: no-repeat;
-      background-position: center; 
+      background-position: 40% 80%; 
       background-size: cover;
       background-color: #000000;
       color: #fff;
@@ -71,6 +71,7 @@
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
+      background-color: transparent;
       color: #36b3a8;
   }
   .carousel-indicators li {
@@ -99,7 +100,7 @@
   }
   .panel-footer .btn:hover {
       border: 1px solid #36b3a8;
-      background-color: #fff !important;
+      background-color: #ffffff !important;
       color: #36b3a8;
   }
   .panel-heading {
@@ -137,14 +138,27 @@
       letter-spacing: 4px;
       border-radius: 0;
       font-family: Lato, sans-serif;
-      position: relative;
   }
+
+  .navbar-collapse {
+      position: absolute;
+      right: 0px;
+      white-space: nowrap;
+      background-color: #333333;
+
+  }
+
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
   }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #36b3a8 !important;
       background-color: #fff !important;
+
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
@@ -154,6 +168,7 @@
       font-size: 20px;
       margin-bottom: 20px;
       color: #36b3a8;
+      background-color: #ffffff;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -200,29 +215,7 @@
   }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">Crawling Ninja</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#sample">SAMPLE</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
 <div class="jumbotron text-center">
 	<h1><strong>We Scrape. <br/> You Create.</strong></h1><br/>
@@ -434,7 +427,6 @@
           <input class="form-control" id="title" name="title" placeholder="Title" type="text">
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
           <button class="btn btn-default pull-right" type="submit">Send</button>
