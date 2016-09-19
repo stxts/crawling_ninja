@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :contacts
-  get 'home/samples'
+  match '/contacts', to: 'contacts#new', via: ['get']
+  resources "contacts", only: [:new, :create]
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

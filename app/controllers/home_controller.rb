@@ -4,4 +4,8 @@ class HomeController < ApplicationController
 
   def samples
   end
+
+  def new
+    @contact = Contact.new
+  end
 end
