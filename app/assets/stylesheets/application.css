@@ -47,7 +47,7 @@ h4 {
   margin-bottom: 30px;
 }  
 .jumbotron {
-  background-image: url("http://s3.amazonaws.com/stxts-profile/crawling_ninja.png");
+  background-image: url("https://s3.amazonaws.com/stxts-profile/crawling_ninja.png");
   background-repeat: no-repeat;
   background-position: 40% 80%; 
   background-size: cover;
@@ -254,10 +254,6 @@ float: center;
 width: 111px;
 text-align: center;
 margin: 2px 10px;
-}
-
-#contact_name {
-	text-align: center;
 }
 
 div.boolean, .simple_form input[type='submit'] {
