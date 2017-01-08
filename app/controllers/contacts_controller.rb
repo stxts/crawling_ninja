@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
       render :contact => true
     else
       flash.now[:error] = 'Cannot send message.'
-      render :new
+      render "contacts/create"
     end
   end
 end
