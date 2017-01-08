@@ -169,7 +169,7 @@ h4 {
   right: 0px;
   white-space: nowrap;
   background-color: #333333;
-
+  position: fixed;
 }
 
 .navbar.navbar-default.navbar-fixed-top {
