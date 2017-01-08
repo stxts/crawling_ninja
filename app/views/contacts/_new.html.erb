@@ -4,9 +4,12 @@
     <div align="center">
 
       <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-        <%= f.input :name, :required => true %>
-        <%= f.input :email, :required => true %>
-        <%= f.input :message, :as => :text, :required => true %>
+        <%= f.input :first_name, label: 'First Name *', :required => true %>
+        <%= f.input :last_name, label: 'Last Name' %>
+        <%= f.input :email, label: 'Email *', :required => true %>
+        <%= f.input :company %>       
+        <%= f.input :title %>
+        
         <div class= "hidden">
           <%= f.input :nickname, :hint => 'Leave this field blank!' %>
         </div>
