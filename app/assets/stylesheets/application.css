@@ -153,6 +153,7 @@ h4 {
   background-color: #333333;
   color: #fff;
 }
+
 .navbar {
   margin-bottom: 0;
   background-color: #333333;
@@ -179,7 +180,7 @@ h4 {
 
 .navbar li a, .navbar .navbar-brand {
   color: #fff !important;
-}
+} 
 
 .navbar-nav.navbar-right:last-child {
 margin-right: 0;
@@ -282,3 +283,14 @@ font-style: italic;
 abbr[title="required"] {
   display: none;
 }
+
+#new_contact {
+  padding-left: 2em;
+}
+
+.service {
+  text-align: left;
+  padding-left: 7em;
+}
+
+
