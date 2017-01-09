@@ -293,4 +293,10 @@ abbr[title="required"] {
   padding-left: 5em;
 }
 
+#submitBtnForm {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
 
