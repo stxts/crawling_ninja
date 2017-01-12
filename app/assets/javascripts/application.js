@@ -48,4 +48,23 @@ $(document).ready(function(){
         }
     });
   });
+
+  $("#contactFormAjax").submit(function(){
+    var dataSet = $(this).serialize();
+    $.ajax({
+        type: "POST",
+        url: $(this).attr("action"),
+        data: dataSet,
+        success: function(){
+            $("#contactFormAjax").hide()
+            $("#submitBtnForm").hide()
+            $("#submitSuccess").show();
+        },
+        error: function(){
+            alert("Failed to send message. Please try again later!");
+        }
+    });
+
+    return false;
+})
 })

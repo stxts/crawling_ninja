@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  match '/contacts', to: 'contacts#new', via: ['get']
+  match '/contacts', to: 'contacts#create', via: ['get']
   resources "contacts", only: [:new, :create]
   root 'home#index'
 

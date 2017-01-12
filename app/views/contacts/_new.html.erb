@@ -1,18 +1,15 @@
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT US!</h2>
+  <h2 class="text-center">CONTACT US</h2>
     <% @contact ||= Contact.new %>
     <div align="center">
 
-      <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+      <%= simple_form_for @contact, :html => {:class => 'form-horizontal', id: "contactFormAjax" }, remote: "true" do |f| %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
         <%= f.input :first_name, label: 'First Name *', :required => true %>
         <%= f.input :last_name, label: 'Last Name' %>
         <%= f.input :email, label: 'Email *', :required => true %>
         <%= f.input :company %>       
         <%= f.input :title %>
-        
-        <div class= "hidden">
-          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-        </div>
         
     </div>
     <div id="submitBtnForm">
@@ -20,4 +17,8 @@
           <%= f.button :submit, 'Send Message', :class=> "btn btn-primary" %>
     </div>
       <% end %>
-</div>  
+    <div class="container text-center bg-grey" id="submitSuccess" style="display: none;">
+      <h2> Thanks for submitting your info.<br/> Our Ninjas will reach out to you shortly! </h2>
+    </div>  
+</div>
+
