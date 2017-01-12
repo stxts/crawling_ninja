@@ -61,7 +61,7 @@ $(document).ready(function(){
             $("#submitSuccess").show();
         },
         error: function(){
-            alert("Failed to send message. Please try again later!");
+            alert("Failed to send message. Please try again!");
         }
     });
 

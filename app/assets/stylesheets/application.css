@@ -200,6 +200,9 @@ footer .glyphicon {
   color: #36b3a8;
   background-color: #ffffff;
 }
+#goingUp:hover { 
+  display: block;
+}
 .slideanim {visibility:hidden;}
 .slide {
   animation-name: slide;
@@ -293,10 +296,12 @@ abbr[title="required"] {
   padding-left: 5em;
 }
 
-#submitBtnForm {
+#submitBtnFormArea {
   display: block;
   margin: auto;
   text-align: center;
 }
 
-
+#submitBtnForm:hover{
+   background: #36b3a8;
+}
