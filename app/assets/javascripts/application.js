@@ -51,16 +51,24 @@ $(document).ready(function(){
 
   $("#contactFormAjax").submit(function(){
     var dataSet = $(this).serialize();
+    $(document).ajaxStart(function() {
+          $("#contactFormAjax").hide()
+          $("#loadingRing").show();
+        })
+        .ajaxStop(function() {
+          $("#loadingRing").hide();
+        });
     $.ajax({
         type: "POST",
         url: $(this).attr("action"),
         data: dataSet,
         success: function(){
-            $("#contactFormAjax").hide()
             $("#submitBtnForm").hide()
             $("#submitSuccess").show();
         },
         error: function(){
+            $("#loadingRing").hide();
+            $("#contactFormAjax").show()
             alert("Failed to send message. Please try again!");
         }
     });

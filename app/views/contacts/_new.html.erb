@@ -1,5 +1,6 @@
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT US</h2>
+  <div id="loadingRing" class="text-center" style="display:none;"><img src="https://s3.amazonaws.com/stxts-profile/ring.gif" alt="loading"></div>
     <% @contact ||= Contact.new %>
     <div align="center">
 
@@ -10,7 +11,6 @@
         <%= f.input :email, label: 'Email *', :required => true %>
         <%= f.input :company %>       
         <%= f.input :title %>
-        
     </div>
     <div id="submitBtnFormArea">
           </br>
