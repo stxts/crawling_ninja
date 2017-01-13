@@ -305,3 +305,9 @@ abbr[title="required"] {
 #submitBtnForm:hover{
    background: #36b3a8;
 }
+
+.center_div{
+  display: block;
+  margin-left: 40px;
+  text-align: center;
+}
