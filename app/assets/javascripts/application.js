@@ -53,6 +53,7 @@ $(document).ready(function(){
     var dataSet = $(this).serialize();
     $(document).ajaxStart(function() {
           $("#contactFormAjax").hide()
+          $("#submitBtnForm").hide()
           $("#loadingRing").show();
         })
         .ajaxStop(function() {
@@ -63,12 +64,12 @@ $(document).ready(function(){
         url: $(this).attr("action"),
         data: dataSet,
         success: function(){
-            $("#submitBtnForm").hide()
             $("#submitSuccess").show();
         },
         error: function(){
             $("#loadingRing").hide();
             $("#contactFormAjax").show()
+            $("#submitBtnForm").show()
             alert("Failed to send message. Please try again!");
         }
     });
