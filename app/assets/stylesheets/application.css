@@ -95,7 +95,7 @@ h4 {
   color: #36b3a8;
 }
 .carousel-control.right:hover, .carousel-control.left:hover {
-	background-color: #ffffff;
+	background-color: transparent;
 }
 .carousel-indicators li {
   border-color: #36b3a8;
