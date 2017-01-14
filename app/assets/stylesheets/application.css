@@ -311,3 +311,7 @@ abbr[title="required"] {
   margin-left: 40px;
   text-align: center;
 }
+
+#myCarousel{
+  height: 250px;
+}
