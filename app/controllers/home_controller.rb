@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  redirect_to "https://www.crawling.ninja"
   def index
   end
 
