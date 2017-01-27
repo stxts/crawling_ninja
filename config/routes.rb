@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  match "*path" => redirect("https://www.crawling.ninja/%{path}"), :constraints => { :protocol => "http://" }
+  match "*path" => redirect("https://www.crawling.ninja/%{path}"), :constraints => { :subdomain => "" }
   match '/contacts', to: 'contacts#create', via: ['get']
   resources "contacts", only: [:new, :create]
   root 'home#index'
