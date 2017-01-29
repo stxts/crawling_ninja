@@ -319,3 +319,11 @@ abbr[title="required"] {
 #myCarousel{
   height: 250px;
 }
+
+#linkedinlink {
+  color: #36b3a8;
+}
+
+a:hover {
+    background-color: transparent;
+}
