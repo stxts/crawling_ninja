@@ -14,7 +14,4 @@ class ContactsController < ApplicationController
       render :new
     end
   end
-
-  force_ssl if: :ssl_configured?
-
 end
