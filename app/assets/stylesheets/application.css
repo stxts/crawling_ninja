@@ -15,6 +15,7 @@
  */
 #first {
 	color: #ffffff;
+  padding: 120px 50px !important;
 }
 
 #freeBtn {
@@ -47,18 +48,12 @@ h4 {
   margin-bottom: 30px;
 }  
 .jumbotron {
-  background-image: url("https://s3.amazonaws.com/stxts-profile/crawling_ninja.png");
+  background-image: url("https://s3.amazonaws.com/stxts-profile/crawling_ninja.png"); 
   background-repeat: no-repeat;
-  background-position: 40% 80%; 
-  background-size: cover;
+  background-size: 100% 100%;
   background-color: #000000;
-  position: relative;
-  width: 100% !important;
-  max-width: 100%;
+  background-position: center center;
   color: #fff;
-  padding: 100px 25px;
-  height: 100%;
-  margin-top: 40px;
   font-family: Lato, sans-serif;
 }
 .container-fluid {
@@ -101,15 +96,16 @@ h4 {
   margin-bottom: 10px;
 }
 .carousel-control.right, .carousel-control.left {
-  background-image: none;
-  background-color: none;
+  background-image: none !important;
+  background-color: none !important;
   color: #36b3a8;
 }
+
 .carousel-control.right:hover, .carousel-control.left:hover {
 	background-color: transparent;
 }
 .carousel-indicators li {
-  border-color: #36b3a8;
+  border-color: #36b3a8 !important;
 }
 .carousel-indicators li.active {
   background-color: #36b3a8;
@@ -181,7 +177,7 @@ h4 {
   right: 0px;
   white-space: nowrap;
   background-color: #333333;
-  position: fixed;
+  text-align: right;
 }
 
 .navbar.navbar-default.navbar-fixed-top {
@@ -314,8 +310,15 @@ abbr[title="required"] {
   text-align: center;
 }
 
+#submitBtnForm {
+  background-color: #36b3a8 !important;
+  border: 0 none;
+  color: #ffffff;
+}
+
 #submitBtnForm:hover{
    background: #36b3a8;
+   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
 .center_div{
@@ -326,6 +329,7 @@ abbr[title="required"] {
 
 #myCarousel{
   height: 250px;
+  background-color: transparent;
 }
 
 #linkedinlink {
@@ -334,4 +338,24 @@ abbr[title="required"] {
 
 a:hover {
     background-color: transparent;
+}
+
+#valuesPanel {
+  margin-top: 40px;
+}
+
+#services {
+  margin-top: 40px;
+}
+
+#sample {
+  margin-top: 40px;
+}
+
+#carouselWords {
+  margin-bottom: -30px;
+}
+
+#contactus {
+  margin-bottom: 30px;
 }
