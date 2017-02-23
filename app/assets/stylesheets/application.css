@@ -324,6 +324,14 @@ abbr[title="required"] {
    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
+#leftc{
+  color: #36b3a8;
+}
+
+#rightc {
+  color: #36b3a8;
+}
+
 .center_div{
   display: block;
   margin-left: 40px;
