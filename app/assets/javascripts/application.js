@@ -49,6 +49,10 @@ $(document).ready(function(){
     });
   });
 
+  $('.nav a').on('click', function(){
+    $('#myNavbar').removeClass('in');
+});
+
   $("#contactFormAjax").submit(function(){
     var dataSet = $(this).serialize();
     $(document).ajaxStart(function() {
