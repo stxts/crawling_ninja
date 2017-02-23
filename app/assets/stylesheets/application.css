@@ -65,6 +65,7 @@ h4 {
   font-weight: 400;
   margin-bottom: 30px;
 }  
+
 .jumbotron {
   background-image: url("https://s3.amazonaws.com/stxts-profile/crawling_ninja.png"); 
   background-repeat: no-repeat;
@@ -261,6 +262,13 @@ footer .glyphicon {
   -webkit-transform: translateY(0%);
 }
 }
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+  padding-bottom: 150px !important;
+}
+}
+
 @media screen and (max-width: 768px) {
 .col-sm-4 {
   text-align: center;
@@ -270,6 +278,7 @@ footer .glyphicon {
     width: 100%;
     margin-bottom: 35px;
 }
+
 }
 @media screen and (max-width: 480px) {
 .logo {
