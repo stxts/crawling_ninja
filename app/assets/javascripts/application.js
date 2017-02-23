@@ -50,7 +50,10 @@ $(document).ready(function(){
   });
 
   $('.nav a').on('click', function(){
-    $('#myNavbar').removeClass('in');
+      $(".navbar-collapse").stop().animate({'height': 0},300, function () {
+          $('.navbar-collapse').removeClass('in').addClass("collapse");
+        });
+        $(".navbar-toggle").stop().removeClass('collapsed');
 });
 
   $("#contactFormAjax").submit(function(){
