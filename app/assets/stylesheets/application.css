@@ -28,7 +28,7 @@ input {
 }
 
 input:focus {
-    border: 3px solid;
+    border: 2px solid;
     border-color: #36b3a8;
 }
 
