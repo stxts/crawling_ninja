@@ -17,29 +17,6 @@
 //= require bootstrap
 //= require_tree .
 
-
-
-  
-function getDeviceScale() {
-    var deviceWidth, landscape = Math.abs(window.orientation) == 90;
-    if (landscape) {
-      deviceWidth = Math.max(480, screen.height);
-    } else {
-      deviceWidth = screen.width;
-    }
-    return window.innerWidth / deviceWidth;
-}
-
-if (navigator.userAgent.match(/Mobi/)) {
-    $(window).on('load scroll', function() {
-        var ds = getDeviceScale();
-        $('.device-fixed-height').css('transform','scale(1,' + ds + ')')
-            .css('transform-origin', '0 0');
-        $('.device-fixed-width').css('transform', 'scale(' + ds + ',1)')
-            .css('transform-origin', '0 0');
-        })
-}
-
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, .jumbotron a, footer a[href='#myPage']").on('click', function(event) {

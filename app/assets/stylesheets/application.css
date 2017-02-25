@@ -195,7 +195,6 @@ h4 {
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
-  line-height: 1.42857143 !important;
   letter-spacing: 4px;
   border-radius: 0;
   font-family: Lato, sans-serif;
@@ -211,10 +210,12 @@ h4 {
 .navbar.navbar-default.navbar-fixed-top {
 	background-color: #333333;
 	border: 0 none;
+    position: fixed !important;
 }
 
 .navbar li a, .navbar .navbar-brand {
   color: #fff !important;
+  position: absolute;
 } 
 
 .navbar-nav.navbar-right:last-child {
