@@ -37,10 +37,10 @@ if (navigator.userAgent.match(/Mobi/)) {
             .css('transform-origin', '0 0');
         $('.device-fixed-width').css('transform', 'scale(' + ds + ',1)')
             .css('transform-origin', '0 0');
+        $('.device-fixed-height').css({'left':$('body').scrollLeft()‌​+'px','width':window‌​.innerWidth+'px'});
+
         })
 }
-
-$(window).on('load scroll') function: $('.device-fixed-height').css({'left':$('body').scrollLeft()‌​+'px','width':window‌​.innerWidth+'px'});
 
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
