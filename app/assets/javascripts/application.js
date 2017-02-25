@@ -40,6 +40,8 @@ if (navigator.userAgent.match(/Mobi/)) {
         })
 }
 
+$(window).on('load scroll') function: $('.device-fixed-height').css({'left':$('body').scrollLeft()‌​+'px','width':window‌​.innerWidth+'px'});
+
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, .jumbotron a, footer a[href='#myPage']").on('click', function(event) {
