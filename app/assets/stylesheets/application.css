@@ -211,7 +211,6 @@ h4 {
 .navbar.navbar-default.navbar-fixed-top {
 	background-color: #333333;
 	border: 0 none;
-  position: fixed;
 }
 
 .navbar li a, .navbar .navbar-brand {
