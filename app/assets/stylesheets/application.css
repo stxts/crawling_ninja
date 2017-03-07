@@ -74,18 +74,24 @@ h4 {
 .jumbotron {
   background-image: url("https://s3.amazonaws.com/stxts-profile/crawling_ninja.png"); 
   background-repeat: no-repeat;
-  background-size: cover;
-  background: contain;
+  background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
-  background-color: #000000;
+  background: contain;
+  background-color: black;
   background-position: center center;
   color: #fff;
   font-family: Lato, sans-serif;
 }
 .container-fluid {
   padding: 60px 50px;
+}
+
+.welcome {
+  background-color: black !important;
+  margin-bottom: 40px;
+  padding: 20px 20px !important;
 }
 
 .container-fluid.footer {
