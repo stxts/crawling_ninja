@@ -71,16 +71,14 @@ h4 {
   margin-bottom: 30px;
 }  
 
-.jumbotron {
+#first {
+  background-color: transparent;
+}
+
+.container-fluid-bg {
   background-image: url("https://s3.amazonaws.com/stxts-profile/crawling_ninja.png"); 
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background: contain;
-  background-color: black;
-  background-position: center center;
   color: #fff;
   font-family: Lato, sans-serif;
 }
